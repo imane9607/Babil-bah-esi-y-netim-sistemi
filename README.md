@@ -1,6 +1,5 @@
 # Babil Bahçesi Yönetim Sistemi
-![Uploading image.png…]()
-
+![image](https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi/assets/168463900/01032cf9-9705-47b4-a10f-8c99a08ee2a6)
 
 Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan web tabanlı bir uygulamadır. Bu uygulama, bitki koleksiyonlarını, sergileri, etkinlikleri, personel ve ziyaretçi kayıtlarını yönetmeyi sağlar. Ayrıca bitki bakımı, sulama, gübreleme gibi işlemleri planlama ve takip etme özellikleri de içerir.
 
