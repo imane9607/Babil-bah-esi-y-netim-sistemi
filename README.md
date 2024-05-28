@@ -94,7 +94,7 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
   - Her kategori için detaylı listelemelere ulaşabilir, yeni kayıtlar ekleyebilir, mevcut kayıtları düzenleyebilir ve silebilirsiniz.
 
 - Videolu Anlatım:
-  - [YouTube Video Rehberi](https://youtu.be/ornek_video_linki)
+  - [YouTube Video Rehberi](https://youtu.be/rKPQWK8492w)
 
 ## Proje Yapısı
 
