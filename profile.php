@@ -163,28 +163,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <a class="nav-link" href="../dashboard.php">Gösterge Paneli</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Babylon-garden/plants/list.php">Bitkiler</a>
+        <a class="nav-link" href="../plants/list.php">Bitkiler</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Babylon-garden/events/list.php">Etkinlikler</a>
+        <a class="nav-link" href="../events/list.php">Etkinlikler</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Babylon-garden/staff/list.php">Personel</a>
+        <a class="nav-link" href="../staff/list.php">Personel</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Babylon-garden/visitors/list.php">Ziyaretçiler</a>
+        <a class="nav-link" href="../visitors/list.php">Ziyaretçiler</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Babylon-garden/care_plans/list.php">Bakım Planları</a>
+        <a class="nav-link" href="../care_plans/list.php">Bakım Planları</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Babylon-garden/reports/list.php">Raporlar</a>
+        <a class="nav-link" href="../reports/list.php">Raporlar</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="/Babylon-garden/profile.php">Profil</a>
+        <a class="nav-link active" href="../profile.php">Profil</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Babylon-garden/logout.php">Çıkış Yap</a>
+        <a class="nav-link" href="../logout.php">Çıkış Yap</a>
       </li>
     </ul>
   </div>
