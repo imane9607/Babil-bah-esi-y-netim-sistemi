@@ -31,8 +31,8 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
 
 1. **Depoyu Klonlayın**
    ```sh
-   git clone https://github.com/kullanici_adi/babil-bahcesi.git
-   cd babil-bahcesi
+   [git clone https://github.com/kullanici_adi/babil-bahcesi.git](https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi.git)
+   cd Babil-bah-esi-y-netim-sistemi
    ```
 
 2. **Veritabanını Oluşturun**
