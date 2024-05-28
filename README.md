@@ -30,7 +30,8 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
 - **XAMPP**
 
 ### Adımlar
-![image](https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi/assets/168463900/e28ffaf9-69ff-4c23-87b6-3abc50f7bb1e)
+![image](https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi/assets/168463900/5926539f-1dcb-4dae-b1c5-0b3153fab4ed)
+
 
 1. **XAMPP'yi İndirin ve Yükleyin:** 
    - XAMPP'yi [https://www.apachefriends.org/](https://www.apachefriends.org/) adresinden indirin ve sisteminize yükleyin.
