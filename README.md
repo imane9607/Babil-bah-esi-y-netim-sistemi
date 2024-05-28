@@ -1,3 +1,4 @@
+```
 # Babil Bahçesi Yönetim Sistemi
 ![image](https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi/assets/168463900/01032cf9-9705-47b4-a10f-8c99a08ee2a6)
 
@@ -26,28 +27,34 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
 - PHP 7.4+
 - MySQL 5.7+
 - Apache/Nginx Web Sunucusu
+- **XAMPP**
 
 ### Adımlar
 
-1. **Depoyu Klonlayın**
+1. **XAMPP'yi İndirin ve Yükleyin:** 
+   - XAMPP'yi [https://www.apachefriends.org/](https://www.apachefriends.org/) adresinden indirin ve sisteminize yükleyin.
+
+2. **Depoyu Klonlayın**
    ```sh
    git clone https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi.git
    cd Babil-bah-esi-y-netim-sistemi
    ```
 
-2. **Veritabanını Oluşturun**
-   - MySQL veritabanında `babylon_garden.sql` dosyasını çalıştırarak gerekli tabloları oluşturun.
-     ```sh
-     mysql -u kullanıcı_adı -p babylon_garden < babylon_garden.sql
-     ```
+3. **XAMPP'yi Başlatın:**
+   - XAMPP Kontrol Paneli'ni açın ve Apache ve MySQL hizmetlerini başlatın.
 
-3. **Veritabanı Ayarlarını Yapın**
+4. **Veritabanını Oluşturun:**
+   - XAMPP'nin MySQL bölümünden phpMyAdmin'i açın.
+   - Yeni bir veritabanı oluşturun ve adını `babylon_garden` olarak ayarlayın.
+   - `babylon_garden.sql` dosyasını phpMyAdmin'in "İçe Aktar" bölümünden yükleyin.
+
+5. **Veritabanı Ayarlarını Yapın:**
    - `config/db.php` dosyasını açın ve veritabanı bağlantı bilgilerinizi güncelleyin.
      ```php
      <?php
      $servername = "localhost";
-     $username = "veritabani_kullanici_adi";
-     $password = "veritabani_sifresi";
+     $username = "root"; // XAMPP'nin varsayılan kullanıcı adı
+     $password = ""; // XAMPP'nin varsayılan şifresi (genellikle boş)
      $dbname = "babylon_garden";
 
      // Veritabanına bağlan
@@ -60,7 +67,7 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
      ?>
      ```
 
-4. **Config Dosyasını Güncelleyin**
+6. **Config Dosyasını Güncelleyin:**
    - `config.php` dosyasını açın ve gerekli ayarları yapın.
      ```php
      <?php
@@ -68,8 +75,9 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
      ?>
      ```
 
-5. **Uygulamayı Çalıştırın**
-   - Web sunucunuza `Babil-bah-esi-y-netim-sistemi` klasörünü taşıyın ve `login.php` dosyasına tarayıcınızdan erişin.
+7. **Uygulamayı Çalıştırın:**
+   - XAMPP'nin `htdocs` klasörüne `Babil-bah-esi-y-netim-sistemi` klasörünü taşıyın.
+   - Tarayıcınızı açın ve `http://localhost/Babil-bah-esi-y-netim-sistemi/login.php` adresine gidin.
    - Giriş yapın:
      - Kullanıcı Adı: `admin`
      - Şifre: `123456`
@@ -78,7 +86,7 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
 
 ### Oturum Açma
 
-- `https://babilbahcesi.site/login.php` adresine gidin.
+- `http://localhost/Babil-bah-esi-y-netim-sistemi/login.php` adresine gidin.
 - Kullanıcı adı ve şifre ile giriş yapın (admin / 123456).
 
 ### Yönetim Paneli
@@ -140,3 +148,5 @@ babylon_garden.sql
 ## Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyin.
+```
+Bu readme dosyası, XAMPP üzerinde çalıştırma adımlarıyla güncellenmiştir. Ayrıca, veritabanı bağlantı bilgilerini ayarlama adımları daha açık bir şekilde belirtilmiştir.
