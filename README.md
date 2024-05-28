@@ -140,11 +140,3 @@ babylon_garden.sql
 ## Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyin.
-
-## Katkıda Bulunma
-
-Katkıda bulunmak isterseniz, lütfen bir pull request gönderin. Her türlü katkı ve geri bildirim memnuniyetle karşılanır.
-
----
-
-Bu proje, botanik bahçesi yönetim sistemleri için kapsamlı bir çözüm sunar ve gelecekteki geliştirmeler ve özelleştirmeler için geniş bir temel sağlar.
