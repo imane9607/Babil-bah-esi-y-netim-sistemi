@@ -1,4 +1,3 @@
-```
 # Babil Bahçesi Yönetim Sistemi
 ![image](https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi/assets/168463900/01032cf9-9705-47b4-a10f-8c99a08ee2a6)
 
@@ -38,70 +37,86 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
    ```sh
    git clone https://github.com/imane9607/Babil-bah-esi-y-netim-sistemi.git
    cd Babil-bah-esi-y-netim-sistemi
-   ```
+content_copy
+Use code with caution.
 
-3. **XAMPP'yi Başlatın:**
-   - XAMPP Kontrol Paneli'ni açın ve Apache ve MySQL hizmetlerini başlatın.
+XAMPP'yi Başlatın:
 
-4. **Veritabanını Oluşturun:**
-   - XAMPP'nin MySQL bölümünden phpMyAdmin'i açın.
-   - Yeni bir veritabanı oluşturun ve adını `babylon_garden` olarak ayarlayın.
-   - `babylon_garden.sql` dosyasını phpMyAdmin'in "İçe Aktar" bölümünden yükleyin.
+XAMPP Kontrol Paneli'ni açın ve Apache ve MySQL hizmetlerini başlatın.
 
-5. **Veritabanı Ayarlarını Yapın:**
-   - `config/db.php` dosyasını açın ve veritabanı bağlantı bilgilerinizi güncelleyin.
-     ```php
-     <?php
-     $servername = "localhost";
-     $username = "root"; // XAMPP'nin varsayılan kullanıcı adı
-     $password = ""; // XAMPP'nin varsayılan şifresi (genellikle boş)
-     $dbname = "babylon_garden";
+Veritabanını Oluşturun:
 
-     // Veritabanına bağlan
-     $conn = new mysqli($servername, $username, $password, $dbname);
+XAMPP'nin MySQL bölümünden phpMyAdmin'i açın.
 
-     // Bağlantıyı kontrol et
-     if ($conn->connect_error) {
-         die("Bağlantı hatası: " . $conn->connect_error);
-     }
-     ?>
-     ```
+Yeni bir veritabanı oluşturun ve adını babylon_garden olarak ayarlayın.
 
-6. **Config Dosyasını Güncelleyin:**
-   - `config.php` dosyasını açın ve gerekli ayarları yapın.
-     ```php
-     <?php
-     define('OPENWEATHERMAP_API_KEY', 'api_anahtarınız');
-     ?>
-     ```
+babylon_garden.sql dosyasını phpMyAdmin'in "İçe Aktar" bölümünden yükleyin.
 
-7. **Uygulamayı Çalıştırın:**
-   - XAMPP'nin `htdocs` klasörüne `Babil-bah-esi-y-netim-sistemi` klasörünü taşıyın.
-   - Tarayıcınızı açın ve `http://localhost/Babil-bah-esi-y-netim-sistemi/login.php` adresine gidin.
-   - Giriş yapın:
-     - Kullanıcı Adı: `admin`
-     - Şifre: `123456`
+Veritabanı Ayarlarını Yapın:
 
-## Kullanım
+config/db.php dosyasını açın ve veritabanı bağlantı bilgilerinizi güncelleyin.
 
-### Oturum Açma
+<?php
+$servername = "localhost";
+$username = "root"; // XAMPP'nin varsayılan kullanıcı adı
+$password = ""; // XAMPP'nin varsayılan şifresi (genellikle boş)
+$dbname = "babylon_garden";
 
-- `http://localhost/Babil-bah-esi-y-netim-sistemi/login.php` adresine gidin.
-- Kullanıcı adı ve şifre ile giriş yapın (admin / 123456).
+// Veritabanına bağlan
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-### Yönetim Paneli
+// Bağlantıyı kontrol et
+if ($conn->connect_error) {
+    die("Bağlantı hatası: " . $conn->connect_error);
+}
+?>
+content_copy
+Use code with caution.
+PHP
 
-- Giriş yaptıktan sonra, gösterge paneline yönlendirileceksiniz.
-- Panelde bitkiler, etkinlikler, raporlar, personel ve ziyaretçiler gibi kategorilerdeki toplam sayıları görebilirsiniz.
-- Her kategori için detaylı listelemelere ulaşabilir, yeni kayıtlar ekleyebilir, mevcut kayıtları düzenleyebilir ve silebilirsiniz.
+Config Dosyasını Güncelleyin:
 
-### Videolu Anlatım
+config.php dosyasını açın ve gerekli ayarları yapın.
 
-- [YouTube Video Rehberi](https://youtu.be/ornek_video_linki)
+<?php
+define('OPENWEATHERMAP_API_KEY', 'api_anahtarınız');
+?>
+content_copy
+Use code with caution.
+PHP
 
-## Proje Yapısı
+Uygulamayı Çalıştırın:
 
-```plaintext
+XAMPP'nin htdocs klasörüne Babil-bah-esi-y-netim-sistemi klasörünü taşıyın.
+
+Tarayıcınızı açın ve http://localhost/Babil-bah-esi-y-netim-sistemi/login.php adresine gidin.
+
+Giriş yapın:
+
+Kullanıcı Adı: admin
+
+Şifre: 123456
+
+Kullanım
+Oturum Açma
+
+http://localhost/Babil-bah-esi-y-netim-sistemi/login.php adresine gidin.
+
+Kullanıcı adı ve şifre ile giriş yapın (admin / 123456).
+
+Yönetim Paneli
+
+Giriş yaptıktan sonra, gösterge paneline yönlendirileceksiniz.
+
+Panelde bitkiler, etkinlikler, raporlar, personel ve ziyaretçiler gibi kategorilerdeki toplam sayıları görebilirsiniz.
+
+Her kategori için detaylı listelemelere ulaşabilir, yeni kayıtlar ekleyebilir, mevcut kayıtları düzenleyebilir ve silebilirsiniz.
+
+Videolu Anlatım
+
+YouTube Video Rehberi
+
+Proje Yapısı
 ├── config/
 │   └── db.php
 ├── css/
@@ -143,10 +158,8 @@ Babil Bahçesi Yönetim Sistemi, botanik bahçeleri yönetmek için kullanılan 
 ├── logout.php
 ├── profile.php
 babylon_garden.sql
-```
+content_copy
+Use code with caution.
+Lisans
 
-## Lisans
-
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyin.
-```
-Bu readme dosyası, XAMPP üzerinde çalıştırma adımlarıyla güncellenmiştir. Ayrıca, veritabanı bağlantı bilgilerini ayarlama adımları daha açık bir şekilde belirtilmiştir.
+Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE dosyasını inceleyin.
