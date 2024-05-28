@@ -144,4 +144,4 @@ babylon_garden.sql
 
 ## Lisans
 
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için `LICENSE` dosyasını inceleyin.
+Bu proje MIT Lisansı ile lisanslanmıştır.
